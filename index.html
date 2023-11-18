@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE-edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Personal Portfolio Website - Morrison Wanja</title>
+ <link rel="stylesheet" href="./style.css">
+ <script src="https://kit.fontawesome.com/9c650302ee.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/morrison.png" class="logo" />
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark"></i>
+            </ul>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm <span>Morrison Wanja</span><br> From Kenya</h1>
+
+        </div>
+    </div>
+  </div>
+  <!-- About Section-->
+  <div id="about">
+    <div class="container">
+     <div class="row">
+      <div class="about-col-1">
+        <img src="images/morrison1.png" />
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p> Expert computer scientist with diverse work experience, including programming, 
+            software development, and consulting. Extensive knowledge of software development
+             cycle as well as proficiency in Java, PHP, Javascript, HTML, CSS, React.js, Node.js,
+              SQL, MySQL, MongoDB, and Python programming languages. Dedicated to meeting
+              customer requirements with innovative solutions that maximize efficiency and exceed 
+              capability targets. Consistently use in-depth knowledge of budgetary issues affecting 
+              development and implementation to create cost-effective solutions. Comfortable discussing 
+              technical issues and solutions with scientists and analysts as well as clients. </p>
+
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                <li><span>Web Development</span><br>Web App Development</li>
+                <li><span>App Development</span><br>Building Andorid/iOS apps</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>August 2023 - December 2023</span><br>Data Analysis Intern at Kenya Revenue Autthority</li>
+                <li><span>July 2023</span><br>Business Development Officer Jirani Smart</li>
+                <li><span>Jan 2022 - June 2023 </span><br>Data Analysis Intern at Kenya Revenue Authority</li>
+                <li><span>Sept 2021 - November 2021</span><br> Attache at Kenya Revenue Authority</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>2023</span><br>Software Engineering at Moringa School</li>
+                <li><span>2017-2021</span><br>Bsc Mathematics and Computer Science at Kirinyaga University</li>
+                <li><span>2013-2017</span><br> St Mary's Secondary School</li>
+            </ul>
+        </div>
+      </div>
+      </div>
+     </div>
+  </div>
+
+<!-- Services-->
+<div id="services">
+    <div class="container">
+     <h1 class="sub-title">My Services</h1>
+     <div class="services-list">      
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>Description of the service</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-crop"></i>
+        <h2>UI/UX</h2>
+        <p>Description of the service</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h2>App Design</h2>
+        <p>Description of the service</p>
+        <a href="#">Learn More</a>
+      </div>
+     </div>
+    </div>
+</div>
+<div id="portfolio">
+ <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <dv class="work-list">
+     <div class="work">
+      <img src="images/background.jpg" />
+      <div class="layer">
+        <h3>Online Library</h3>
+        <p> The app connects you to the wide varity of books available in Jekins
+            Bookstore. The web app allows readers to read the books online at a subsidized fee
+            or can even purchase a copy and will be deliver them country wide. You can find it here.</p>
+       <a href="#"><i class="fas fa-external-link-alt"></i></a>
+      </div>
+     </div>
+     <div class="work">
+        <img src="images/background1.jpg" />
+        <div class="layer">
+            <h3>Consequence Management Web App</h3>
+            <p> This website manages employees recommended for 
+                defciency managent program and can be used in most of
+                the organizations/companies....... To learn more about
+                the app you can visit the link below.</p>
+           <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+       </div>
+       <div class="work">
+        <img src="images/background2.jpg" />
+        <div class="layer">
+            <h3>Social Media App</h3>
+            <p> The app connects you to .................. You can find it here.</p>
+           <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+       </div>
+    </dv>
+    <a href="#" class="btn">See More</a>
+ </div>
+</div>
+
+<!---Contacts-->
+<div id="contact">
+    <div class="container">
+     <div class="rows">
+        <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        
+        <p><i class="fa-regular fa-paper-plane"></i>  morrisonwaja@gmail.com</p>
+           <p><i class="fa-solid fa-phone"></i>  0719362383 </p>
+           <div class="social-icons">
+           <a href="#"><i class="fa-brands fa-facebook"></i></a>
+           <a href="" ><i class="fa-brands fa-square-x-twitter"></i></a>
+           <a href="" ><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="images/Curriculum Vitae.pdf" download class="btn btn2">Download CV</a>
+        </div>    
+        <div class="contact-right">
+            <h1 class="sub-title">Send a Message to Me</h1>
+            <form class="user-input">
+            <input type="text" class="form-control" name="text" placeholder="Kindly enter your name here" required>
+            <input type="text" class="form-control" name="text" placeholder="Your Mail" required>
+            <textarea class="text-area" rows="10" placeholder="Your message"></textarea>
+            <input type="submit" value="Submit" class="btn-submit">
+            </form>
+          </div>
+       </div>
+   </div>
+   
+</div>
+<div class="copyright">
+    <p>Copyright @ Morrison. Made with<i class="fa-solid fa-heart"></i></p>
+   </div>
+
+
+<script>
+let tabLinks = document.getElementsByClassName("tab-links");
+    let tabContents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+        for(tablink of tabLinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+ </body>
+</html>

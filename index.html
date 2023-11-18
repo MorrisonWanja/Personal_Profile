@@ -162,11 +162,12 @@
         </div>    
         <div class="contact-right">
             <h1 class="sub-title">Send a Message to Me</h1>
-            <form class="user-input">
-            <input type="text" class="form-control" name="text" placeholder="Kindly enter your name here" required>
-            <input type="text" class="form-control" name="text" placeholder="Your Mail" required>
-            <textarea class="text-area" rows="10" placeholder="Your message"></textarea>
-            <input type="submit" value="Submit" class="btn-submit">
+            <form class="user-input" name="submit-to-google-sheet" id="google-sheet">
+            <span id="message"></span>
+            <input type="text" class="form-control" name="Name" placeholder="Kindly enter your name here" required>
+            <input type="text" class="form-control" name="Email" placeholder="Your Mail" required>
+            <textarea class="text-area" rows="10" name="Message" placeholder="Your message"></textarea>
+            <input type="submit" value="submit" class="btn-submit">
             </form>
           </div>
        </div>
@@ -203,6 +204,24 @@ function opentab(tabname){
         sidemenu.style.right = "-180px"
     }
 </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzU3S2Q1F9Pfvr_hEP_xW8OEHNjsmkfeDJ9DMEoIPX1amvDB7LlkPYQvgggZpdMhdgXFA/exec'
+    const form = document.form['submit-to-google-sheet']
+    const message = document.getElementById("message")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefasult()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            message.innerHTML ="Your Message has been Sent Successfully "
+            setTimeout(function(){
+                message.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
  </body>
 </html>

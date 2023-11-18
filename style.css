@@ -4,6 +4,9 @@
     font-family: Georgia, 'Times New Roman';
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: rgb(68, 64, 64);
     color: whitesmoke;
@@ -298,15 +301,6 @@ transition: transform 1s;
 }
 
 
-
-
-
-
-
-
-
-
-
 .user-input{
     padding: 50px 40px
 }
@@ -385,9 +379,15 @@ transition: transform 1s;
 .copyright i{
     color: red;
 }
+#message{
+    color: green;
+    margin-top: 0;
+    display: block;
+    text-align: center;
+}
 
 /*--------css for small screens--------------------*/
-nav.fa-solid{
+nav .fa-solid{
     display: none;
 }
 @media only screen and (max-width:600px){
@@ -401,7 +401,7 @@ nav.fa-solid{
  .header-text h1{
     font-size: 30px;
  }
- nav.fa-solid{
+ nav .fa-solid{
     display: block;
     font-size:25px;
 }
@@ -425,6 +425,11 @@ nav ul .fa-solid{
   top :25px;
   left:25px;
   cursor: pointer;
+}
+#message{
+    color: green;
+    margin-top: -20px;
+    display: block;
 }
 
 }

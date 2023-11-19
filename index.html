@@ -206,22 +206,22 @@ function opentab(tabname){
 </script>
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzU3S2Q1F9Pfvr_hEP_xW8OEHNjsmkfeDJ9DMEoIPX1amvDB7LlkPYQvgggZpdMhdgXFA/exec'
-    const form = document.form['submit-to-google-sheet']
-    const message = document.getElementById("message")
+    const form = document.forms['submit-to-google-sheet']
+    const messages = document.getElementById("message")
   
     form.addEventListener('submit', e => {
-      e.preventDefasult()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            message.innerHTML ="Your Message has been Sent Successfully "
-            setTimeout(function(){
-                message.innerHTML=""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        messages.innerHTML="Submitted Successfully"
+        setTimeout(function(){
+            messages.innerHTML =""
+        },5000)
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
  </body>
 </html>

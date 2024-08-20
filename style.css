@@ -1,437 +1,420 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Georgia, 'Times New Roman';
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman";
+  box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    background: rgb(68, 64, 64);
-    color: whitesmoke;
+body {
+  background: rgb(68, 64, 64);
+  color: whitesmoke;
 }
-#header{
-    width: 100%;
-    height: 95vh;
-    background: url(images/Image-1.jpg);
-    background-size:cover;
-    /* background-repeat: no-repeat; */
-    background-position:right;
-    
+#header {
+  width: 100%;
+  height: 95vh;
+  background: url(images/Image-2.jpg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-position: right;
 }
-.container{
-    padding: 10px 10%;
+.container {
+  padding: 10px 10%;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.logo{
-    width: 200px;
+.logo {
+  width: 200px;
 }
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-    transition: backround 0.5s, transform 0.5s;
-    
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  transition: backround 0.5s, transform 0.5s;
 }
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-    
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
 }
-nav ul li a::after{
-    content: "";
-    width:0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left:0;
-    bottom: -6px; 
-    transition:0.5s;  
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
 }
-nav ul li a:hover::after{
-    width:100%;
+nav ul li a:hover::after {
+  width: 100%;
 }
-nav ul li:hover{
-    background: blueviolet;
-    transform: translateX(15px);
-    
+nav ul li:hover {
+  background: blueviolet;
+  transform: translateX(15px);
 }
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
 }
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
 }
-.header-text h1 span{
-    color:#ff004f;
+.header-text h1 span {
+  color: #ff004f;
 }
 /*-------about styling ------------*/
-#about{
-    padding: 80px 0;
-    color:#ababab;
+#about {
+  padding: 80px 0;
+  color: #ababab;
 }
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.about-col-1{
-    flex-basis: 35%;
-
+.about-col-1 {
+  flex-basis: 35%;
 }
-.about-col-1 img{
-    width: 100%;
-    height: 500px;
-    border-radius: 15px;
+.about-col-1 img {
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
 }
-.about-col-2{
-    flex-basis: 55%;
+.about-col-2 {
+  flex-basis: 55%;
 }
-.sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color:#fff;
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
 }
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
 }
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
 }
-.tab-links::after{
-    content: "";
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.8s;   
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.8s;
 }
-.tab-links.active-link::after{
-    width: 50%;
+.tab-links.active-link::after {
+  width: 50%;
 }
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
 }
-.tab-contents ul li span{
-    color: #b54769;;
-    font-size: 14px;
+.tab-contents ul li span {
+  color: #b54769;
+  font-size: 14px;
 }
-.tab-contents{
-    display: none;
+.tab-contents {
+  display: none;
 }
-.tab-contents.active-tab{
-    display: block;
+.tab-contents.active-tab {
+  display: block;
 }
 /*--------------------Services------------------*/
-#services{
-    padding: 30px 0;
+#services {
+  padding: 30px 0;
 }
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
 }
-.services-list div{
-    background: #262626;
-    padding: 40px;
-    font-size: 15px;
-    border-radius: 20px;
-    transition: backround 0.5s, transform 0.5s;
+.services-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 15px;
+  border-radius: 20px;
+  transition: backround 0.5s, transform 0.5s;
 }
-.services-list div i{
-    font-size: 50px;
-    color: white;
-    margin-bottom: 30px;
+.services-list div i {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 30px;
 }
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
+.services-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
-.services-list div a{
-    text-decoration: none;
-    color:#ffff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
+.services-list div a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
 }
-.services-list div:hover{
-    background: #b54769;
-    transform: translateY(10px);
+.services-list div:hover {
+  background: #b54769;
+  transform: translateY(10px);
 }
 /* ------------------My Work---------------------- */
-#portfolio{
-    padding: 50px 0;
+#portfolio {
+  padding: 50px 0;
 }
-.work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
 }
-.work{
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
+.work {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
 }
-.work img{
-    width: 100%;
-    height: 300px;
-    border-radius: 15px;
-    display: block;
-    transition: transform 0.5s;
+.work img {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  display: block;
+  transition: transform 0.5s;
 }
-.layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
-    border-radius: 15px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 15px;
-    transition: height 1s;
-}
-
-.layer h3{
-    margin-top: 20px;
-    font-weight: 500px;
-    margin-bottom: 20px;
-}
-.layer a{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #ff004f;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-    
-}
-.work:hover img{
-    transform: scale(1.5);
-
-}
-.work:hover .layer{
-    height:100%;
-}
-.btn{
-    display: block;
-    margin: 50px auto;
-    width:fit-content;
-    border: 2px solid #ff004f;
-    padding: 15px 50px;
-    border-radius: 8px;
-    text-decoration: none;
-    color:white;
-    font-size: 20px;
-    transition: background 1s;
-}
-.btn:hover{
-background: blue;
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 15px;
+  transition: height 1s;
 }
 
+.layer h3 {
+  margin-top: 20px;
+  font-weight: 500px;
+  margin-bottom: 20px;
+}
+.layer a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+.work:hover img {
+  transform: scale(1.5);
+}
+.work:hover .layer {
+  height: 100%;
+}
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 2px solid #ff004f;
+  padding: 15px 50px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: background 1s;
+}
+.btn:hover {
+  background: blue;
+}
 
 /*-----------Contacts----------------------*/
-.contact{
-    padding: 30px;
+.contact {
+  padding: 30px;
 }
-.contact-left{
-    flex-basis: 35%;
+.contact-left {
+  flex-basis: 35%;
 }
-.contact-right{
-    flex-basis: 60%;
+.contact-right {
+  flex-basis: 60%;
 }
-.contact-left p{
-margin-top: 10px;
-font-size: 20px;
+.contact-left p {
+  margin-top: 10px;
+  font-size: 20px;
 }
-.contact-left p i{
-    color:#b54769;
-    margin-right: 18px;
-    font-size: 30px;
+.contact-left p i {
+  color: #b54769;
+  margin-right: 18px;
+  font-size: 30px;
 }
-.social-icons{
-margin-top: 30px;
+.social-icons {
+  margin-top: 30px;
 }
-.social-icons a{
-text-decoration: none;
-font-size: 40px;
-margin-right: 15px;
-color:#ababaa;
-transition: transform 1s;
+.social-icons a {
+  text-decoration: none;
+  font-size: 40px;
+  margin-right: 15px;
+  color: #ababaa;
+  transition: transform 1s;
 }
-.social-icons a i:hover{
-    transform: scale(1.5);
-    background:greenyellow;
+.social-icons a i:hover {
+  transform: scale(1.5);
+  background: greenyellow;
 }
-.btn.btn2{
-    display: inline-block;
-    
-}
-
-
-.user-input{
-    padding: 50px 40px
+.btn.btn2 {
+  display: inline-block;
 }
 
-#contact{
-    padding: 80px 0;
-    color:#ababaa;
-}
-.rows{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.contact-details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.user-input{
-    background: #ababab;
-    padding: 20px   ;
-    width: 100%;
-    outline: none;
-    border:0;
-    margin: 15px 0;
-    font-size: 15px;
-    color: azure;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border-radius: 20px;
-    gap: 10px;
-
-   
-}
-.user-input input.form-control{
-    height: 60px;
-    font-size: 20px;
-    font-weight: 500;
+.user-input {
+  padding: 50px 40px;
 }
 
+#contact {
+  padding: 80px 0;
+  color: #ababaa;
+}
+.rows {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-input {
+  background: #ababab;
+  padding: 20px;
+  width: 100%;
+  outline: none;
+  border: 0;
+  margin: 15px 0;
+  font-size: 15px;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  gap: 10px;
+}
+.user-input input.form-control {
+  height: 60px;
+  font-size: 20px;
+  font-weight: 500;
+}
 
-.user-input input{
-    background: #ababab;
-    border-radius: 10px;
+.user-input input {
+  background: #ababab;
+  border-radius: 10px;
 }
-.user-input textarea{
-    background: #ababab;
-    border-radius: 10px;
-    font-size: 20px;
+.user-input textarea {
+  background: #ababab;
+  border-radius: 10px;
+  font-size: 20px;
 }
-.user-input input.btn-submit{
-    background: #ff004f;
-    width: 150px;
-    height:50px;
-    font-size: 20px;
-    font-weight: 600;
-    color:azure;
-    border-radius: 10px;
-    cursor:pointer;
+.user-input input.btn-submit {
+  background: #ff004f;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: azure;
+  border-radius: 10px;
+  cursor: pointer;
 }
-.info{
-    gap: 5px;
-    list-style: none;
+.info {
+  gap: 5px;
+  list-style: none;
 }
-.copyright{
-    padding-top: 25px;
-    text-decoration: none;
-    text-align: center;
-    background:black;
-    font-size: 20px;
-    color:azure;
-    font-weight: 700;
-    
+.copyright {
+  padding-top: 25px;
+  text-decoration: none;
+  text-align: center;
+  background: black;
+  font-size: 20px;
+  color: azure;
+  font-weight: 700;
 }
-.copyright i{
-    color: red;
+.copyright i {
+  color: red;
 }
-#message{
-    color: green;
-    margin-top: 0;
-    display: block;
-    text-align: center;
+#message {
+  color: green;
+  margin-top: 0;
+  display: block;
+  text-align: center;
 }
 
 /*--------css for small screens--------------------*/
-nav .fa-solid{
-    display: none;
+nav .fa-solid {
+  display: none;
 }
-@media only screen and (max-width:600px){
- #header{
-    background-image:url(images/background.jpg);
- }
- .header-text{
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url(images/background.jpg);
+  }
+  .header-text {
     margin-top: 100%;
-    font-size:16px;
- }
- .header-text h1{
+    font-size: 16px;
+  }
+  .header-text h1 {
     font-size: 30px;
- }
- nav .fa-solid{
+  }
+  nav .fa-solid {
     display: block;
-    font-size:25px;
-}
-nav ul{
-    background:grey;
+    font-size: 25px;
+  }
+  nav ul {
+    background: grey;
     position: fixed;
-    top:0;
+    top: 0;
     right: -180px;
-    width:180px;
-    height:100vh;
+    width: 180px;
+    height: 100vh;
     padding-top: 50px;
     z-index: 2;
-    transition:right 1s;
-}
-nav ul li{
-    display:block;
+    transition: right 1s;
+  }
+  nav ul li {
+    display: block;
     margin: 25px;
-}
-nav ul .fa-solid{
-  position: absolute;
-  top :25px;
-  left:25px;
-  cursor: pointer;
-}
-#message{
+  }
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  #message {
     color: green;
     margin-top: -20px;
     display: block;
-}
-
+  }
 }
